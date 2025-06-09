@@ -1,4 +1,4 @@
-const hour = 6;//new Date().getHours();
+const hour = 20;//new Date().getHours();
 const imageElement = document.getElementById("timeImage");
 let imageFile;
 
