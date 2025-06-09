@@ -7,7 +7,7 @@ const COLORS = {
     afternoon: "#007399", 
     default: "#260099"
 };
-
+hour = 6;
 if (hour >= 6 && hour < 12) {
     imageFile = "morning.jpg";
 } else if (hour >= 12 && hour < 18) {
