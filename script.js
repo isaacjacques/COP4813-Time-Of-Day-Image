@@ -1,5 +1,6 @@
 const hour = new Date().getHours();
-let backgroundColor;
+const imageElement = document.getElementById("timeImage");
+let imageFile;
 
 const COLORS = {
     morning: "#994d00",    
@@ -7,13 +8,12 @@ const COLORS = {
     default: "#260099"
 };
 
-
 if (hour >= 6 && hour < 12) {
-    backgroundColor = COLORS.morning;
+    imageFile = "morning.jpg";
 } else if (hour >= 12 && hour < 18) {
-    backgroundColor = COLORS.afternoon;
+    imageFile = "afternoon.jpg";
 } else {
-    backgroundColor = COLORS.default;
+    imageFile = "night.jpg";
 }
 
-document.body.style.backgroundColor = backgroundColor;
+imageElement.src = imageFile;
